@@ -13,6 +13,8 @@ public class colllisionScript : MonoBehaviour
 
     public int lapCount;
 
+    public string textCount;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +35,18 @@ public class colllisionScript : MonoBehaviour
     {
         if ( other.gameObject.tag == "Player")
         {
-            Debug.Log("Player entered the zone!");
+            lapCount++;
+            if (lapCount >= 3)
+            {
+
+            }
+            else
+            {
+                textCount = lapCount.ToString();
+                Debug.Log("Player entered the zone!");
+                lapCounter.text = "Laps:" + textCount + "/3";
+            }
+            
         }
     }
 }
