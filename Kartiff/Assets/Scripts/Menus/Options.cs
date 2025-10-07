@@ -6,7 +6,7 @@ namespace rico
 
     public class Options : MonoBehaviour
     {
-        public GameObject gameObject;
+        public Animator menuAnimator;
 
 
         // Start is called before the first frame update
@@ -23,12 +23,12 @@ namespace rico
 
         public void ActivateControls()
         {
-
+            menuAnimator.SetTrigger("ActivateControls");
         }
 
         public void DeactivateControls()
         {
-
+            menuAnimator.SetTrigger("ActivateControls");
         }
     }
 }

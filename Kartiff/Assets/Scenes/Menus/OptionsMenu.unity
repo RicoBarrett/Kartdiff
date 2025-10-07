@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -671,6 +671,7 @@ GameObject:
   m_Component:
   - component: {fileID: 920996845}
   - component: {fileID: 920996846}
+  - component: {fileID: 920996847}
   m_Layer: 0
   m_Name: Options
   m_TagString: Untagged
@@ -707,7 +708,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a767d4476d16ae459fd440b16a61fe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObject: {fileID: 920996843}
+  menuAnimator: {fileID: 920996847}
+--- !u!95 &920996847
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920996843}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d48751f2de2679149ac05fcafa329c0a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &935895870
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -887,17 +910,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1240303709}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 178.7389}
+  m_LocalRotation: {x: 0, y: 0.6427877, z: -0, w: -0.7660444}
+  m_LocalPosition: {x: 0, y: 0, z: 176.6}
   m_LocalScale: {x: 0.12882268, y: 0.12882268, z: 0.12882268}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1587316962}
   m_Father: {fileID: 920996845}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 280, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 150.02425, y: -45.982777}
+  m_AnchoredPosition: {x: 171.2, y: -45.982777}
   m_SizeDelta: {x: 1920, y: 896.34875}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1240303711
@@ -1045,7 +1068,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1587316964}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 920996846}
+        m_TargetAssemblyTypeName: rico.Options, Assembly-CSharp
+        m_MethodName: DeactivateControls
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1587316964
 MonoBehaviour:
   m_ObjectHideFlags: 0
