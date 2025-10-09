@@ -369,6 +369,7 @@
 "Assets/Scripts/ReviveTesting/ReviveTracker.cs"
 "Assets/Scripts/ReviveTesting/TrackCollider.cs"
 "Assets/Scripts/ReviveTesting/TrackParent.cs"
+"Assets/Scripts/SplitScreen/SplitScreen.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"
@@ -403,6 +404,10 @@
 "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs"
+"Assets/VVPWR/PlayerMovementBarebones.cs"
+"Assets/VVPWR/PWR_Jail.cs"
+"Assets/VVPWR/PWR_Speed.cs"
+"Assets/VVPWR/PWR_Train.cs"
 -langversion:9.0
 
 /deterministic
