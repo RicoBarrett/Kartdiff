@@ -15,10 +15,16 @@ public class AIDriver : MonoBehaviour
 
     private CarDriver carDriver;
     private Vector3 targetPosition;
+    private Rigidbody rb;
+    private Vector3 direction;
     
 
     void Start()
     {
+
+
+        rb = GetComponent<Rigidbody>();
+
         carDriver = GetComponent<CarDriver>();
 
         waypoints = waypointContainer.waypoints;
@@ -34,9 +40,10 @@ public class AIDriver : MonoBehaviour
             currentWaypoint++;
             waypoint = waypoints[currentWaypoint].GetChild(Random.Range(0, 4));
 
-            if (currentWaypoint == waypoints.Count)
+            if (currentWaypoint == (waypoints.Count-1))
             {
                 currentWaypoint = 0;
+                waypoint = waypoints[currentWaypoint].GetChild(Random.Range(0, 4));
             }
         }
 
@@ -68,5 +75,13 @@ public class AIDriver : MonoBehaviour
 
         // Pass the inputs to the car driver
         carDriver.SetInputs(forwardAmount, turnAmount);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            direction = Vector3.Reflect(rb.velocity, collision.contacts[0].normal);
+        }
     }
 }
