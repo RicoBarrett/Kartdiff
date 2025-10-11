@@ -9,6 +9,8 @@ public class colllisionScript : MonoBehaviour
 
     public Collider collisionBox;
 
+    public Collider preCheckCollider;
+
     public GameObject player;
 
     public int lapCount;
@@ -23,6 +25,11 @@ public class colllisionScript : MonoBehaviour
         player = GameObject.Find("Player");
 
         lapCounter = GameObject.Find("ScoreCounter").GetComponent<TextMeshProUGUI>();
+
+        preCheckCollider = GameObject.Find("PreCheckTrigger").GetComponent<Collider>();
+
+        
+
     }
 
     // Update is called once per frame
@@ -33,7 +40,7 @@ public class colllisionScript : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if ( other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
             lapCount++;
             if (lapCount >= 3)
