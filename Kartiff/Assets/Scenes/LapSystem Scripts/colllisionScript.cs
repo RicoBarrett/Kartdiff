@@ -13,9 +13,11 @@ public class colllisionScript : MonoBehaviour
 
     public GameObject player;
 
-    public int lapCount;
+    public static int playerLapCount;
 
-    public string textCount;
+    public string textPlayerCount;
+
+    public static int AILapCount;
 
     // Start is called before the first frame update
     void Start()
@@ -42,18 +44,24 @@ public class colllisionScript : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            lapCount++;
-            if (lapCount >= 3)
-            {
+            playerLapCount++;
 
+            if (playerLapCount >= 3)
+            {
+                textPlayerCount = playerLapCount.ToString();
+                lapCounter.text = "Laps:" + textPlayerCount + "/3 you win yippee yay";
             }
             else
             {
-                textCount = lapCount.ToString();
+                textPlayerCount = playerLapCount.ToString();
                 Debug.Log("Player entered the zone!");
-                lapCounter.text = "Laps:" + textCount + "/3";
+                lapCounter.text = "Laps:" + textPlayerCount + "/3";
             }
             
+        }
+        if (other.gameObject.tag == "AI")
+        {
+            AILapCount++;
         }
     }
 }

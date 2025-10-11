@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - CollisionBox
+  - AI
+  - PlayerPos
+  - AIPosFront
+  - AIPosBack
   layers:
   - Default
   - TransparentFX
