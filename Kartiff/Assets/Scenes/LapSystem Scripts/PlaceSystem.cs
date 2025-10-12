@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class PlaceSystem : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class PlaceSystem : MonoBehaviour
     public int AICount;
     public int posFinder;
     public float[] aiDistance;
+    public float[] placesTracker;
     public int aiAmount;
 
     public float playerDistance;
@@ -31,6 +33,8 @@ public class PlaceSystem : MonoBehaviour
         aiAmount = aiCount.Length;
 
         aiDistance = new float[aiAmount];
+
+        placesTracker = new float[aiAmount + 1];
 
         player = GameObject.Find("Player");
 
@@ -49,15 +53,30 @@ public class PlaceSystem : MonoBehaviour
     void Update()
     {
         playerDistance = Vector3.Distance(player.transform.position, Waypoint.transform.position);
+        placesTracker[aiAmount] = playerDistance;   
 
         while (AICount < aiCount.Length)
         {
             aiDistance[AICount] = Vector3.Distance(aiCount[AICount].transform.position, Waypoint.transform.position);
+            placesTracker[AICount] = Vector3.Distance(aiCount[AICount].transform.position, Waypoint.transform.position);
+
             AICount++;
         }
 
-        
+        Array.Sort(placesTracker);
 
+        while (posFinder < placesTracker.Length)
+        {
+            Debug.Log("While loop works!");
+
+            if (placesTracker[posFinder] == playerDistance)
+            {
+                Debug.Log("If statement works!");
+                playerPos = posFinder + 1;
+            }
+            posFinder++;
+        }
+       
         placeCounter.text = "Place:" + playerPos;
         AICount = 0;
         posFinder = 0;
