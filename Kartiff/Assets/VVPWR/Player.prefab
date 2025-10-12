@@ -241,7 +241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b769a24924e41924d86d334ae69940d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 270
+  moveSpeed: 2430
   groundDrag: 1
   playerHeight: 2
   whatIsGround:
