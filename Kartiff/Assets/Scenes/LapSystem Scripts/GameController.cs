@@ -15,7 +15,7 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
-         GameObject[] aiCount = GameObject.FindGameObjectsWithTag("AI");
+         
     }
 
 
@@ -33,6 +33,9 @@ public class GameController : MonoBehaviour
         }
 
         DontDestroyOnLoad(this.gameObject);
+
+        //GameObject[] aiCount = GameObject.FindGameObjectsWithTag("AI");
+        //Debug.Log(aiCount.Length);
     }
 
 }
