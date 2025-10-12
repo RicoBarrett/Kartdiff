@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+
 
 public class WheelMovement : MonoBehaviour
 {
@@ -13,23 +15,48 @@ public class WheelMovement : MonoBehaviour
     public float breakingForce = 300f;
     public float maxTurnAngle = 15f;
 
+
+    public InputAction playerControls;
+
     private float currentAcceleration = 0f;
     private float currentBreakingForce = 0f;
     private float currentTurnAngle = 0f;
 
+    private void OnEnable()
+    {
+        
+        if (playerControls != null)
+            playerControls.Enable();
+    }
+
+    private void OnDisable()
+    {
+        if (playerControls != null)
+            playerControls.Disable();
+    }
+
     private void FixedUpdate()
     {
-        currentAcceleration = acceleration * Input.GetAxis("Vertical");
+        Vector2 moveInput = Vector2.zero;
 
+        
+        if (playerControls != null)
+        {
+           
+            moveInput = playerControls.ReadValue<Vector2>();
+        }
 
+        
+        currentAcceleration = acceleration * moveInput.y;
+        currentTurnAngle = maxTurnAngle * moveInput.x;
 
-
-
-        if (Input.GetKey(KeyCode.Space))
+        
+        if (Keyboard.current != null && Keyboard.current.spaceKey.isPressed)
             currentBreakingForce = breakingForce;
         else
             currentBreakingForce = 0f;
 
+        
         frontRight.motorTorque = currentAcceleration;
         frontLeft.motorTorque = currentAcceleration;
 
@@ -38,27 +65,10 @@ public class WheelMovement : MonoBehaviour
         backRight.brakeTorque = currentBreakingForce;
         backLeft.brakeTorque = currentBreakingForce;
 
-
-        currentTurnAngle = maxTurnAngle * Input.GetAxis("Horizontal");
         frontRight.steerAngle = currentTurnAngle;
         frontLeft.steerAngle = currentTurnAngle;
-        
-
-
-    }
-
-
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
+
+
+
