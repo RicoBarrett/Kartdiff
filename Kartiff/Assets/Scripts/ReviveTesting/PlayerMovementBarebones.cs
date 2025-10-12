@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.InputSystem;
 
 public class PlayerMovementTutorial : MonoBehaviour
 {
+    public PlayerInput playerControls;
+
     [Header("Movement")]
     public float moveSpeed;
 
@@ -30,11 +33,27 @@ public class PlayerMovementTutorial : MonoBehaviour
 
     Rigidbody rb;
 
+    private InputAction move;
+
+    private void Awake()
+    {
+        playerControls = GetComponent<PlayerInput>();
+    }
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
 
+    }
+
+    private void OnEnable()
+    {
+        move = playerControls.actions.FindAction("Move");
+    }
+
+    private void OnDisable()
+    {
+        move.Disable();
     }
 
     private void Update()
@@ -68,11 +87,12 @@ public class PlayerMovementTutorial : MonoBehaviour
     private void MovePlayer()
     {
         // calculate movement direction
-        moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+        moveDirection = move.ReadValue<Vector2>();
+
 
         // on ground
-        if(grounded)
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+        if (grounded)
+            rb.velocity = new Vector3((moveDirection.x * moveSpeed), (moveDirection.y * moveSpeed));
 
     }
 
@@ -81,7 +101,7 @@ public class PlayerMovementTutorial : MonoBehaviour
         Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
         // limit velocity if needed
-        if(flatVel.magnitude > moveSpeed)
+        if (flatVel.magnitude > moveSpeed)
         {
             Vector3 limitedVel = flatVel.normalized * moveSpeed;
             rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
