@@ -3,7 +3,11 @@ guid: e4de7fda9baa2a846b8119d2ff0b0bd6
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - trainModel: {fileID: 7876394231178889260, guid: 54142725c75695f4b92db39138ef483c, type: 3}
+  - playerModel: {fileID: 2021519457959835886, guid: 403e83c051bbad94480071b7ea31a673, type: 3}
+  - playerMovement: {fileID: 8031700612511543101, guid: 403e83c051bbad94480071b7ea31a673, type: 3}
+  - playerRb: {fileID: 3347155424380677718, guid: 403e83c051bbad94480071b7ea31a673, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
