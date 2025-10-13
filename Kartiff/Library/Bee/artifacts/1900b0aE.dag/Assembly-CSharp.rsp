@@ -112,6 +112,7 @@
 -define:ENABLE_UNITY_COLLECTIONS_CHECKS
 -define:ENABLE_BURST_AOT
 -define:UNITY_TEAM_LICENSE
+-define:UNITY_PRO_LICENSE
 -define:ENABLE_CUSTOM_RENDER_TEXTURE
 -define:ENABLE_DIRECTOR
 -define:ENABLE_LOCALIZATION
@@ -379,6 +380,9 @@
 "Assets/Scripts/CharacterSelection/CharacterSelectorUI.cs"
 "Assets/Scripts/CharacterSelection/CharacterTest.cs"
 "Assets/Scripts/CharacterSelection/TestManager.cs"
+"Assets/Scripts/Matt Scripts/PlayerPowerUp.cs"
+"Assets/Scripts/Matt Scripts/PlayerPowerUpUI.cs"
+"Assets/Scripts/Matt Scripts/PowerUpSpawner.cs"
 "Assets/Scripts/Menus/MenuMovement.cs"
 "Assets/Scripts/Menus/Options.cs"
 "Assets/Scripts/Menus/PanelCloser.cs"
