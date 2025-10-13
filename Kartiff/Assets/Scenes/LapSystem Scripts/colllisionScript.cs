@@ -9,7 +9,7 @@ public class colllisionScript : MonoBehaviour
 
     public Collider collisionBox;
 
-    public Collider preCheckCollider;
+    //public Collider preCheckCollider;
 
     public GameObject player;
 
@@ -28,7 +28,7 @@ public class colllisionScript : MonoBehaviour
 
         lapCounter = GameObject.Find("ScoreCounter").GetComponent<TextMeshProUGUI>();
 
-        preCheckCollider = GameObject.Find("PreCheckTrigger").GetComponent<Collider>();
+        //preCheckCollider = GameObject.Find("PreCheckTrigger").GetComponent<Collider>();
 
         
 
@@ -49,12 +49,12 @@ public class colllisionScript : MonoBehaviour
             if (playerLapCount >= 3)
             {
                 textPlayerCount = playerLapCount.ToString();
-                lapCounter.text = "Laps:" + textPlayerCount + "/3 you win yippee yay";
+                lapCounter.text = "Laps: 3/3";
             }
             else
             {
                 textPlayerCount = playerLapCount.ToString();
-                Debug.Log("Player entered the zone!");
+                //Debug.Log("Player entered the zone!");
                 lapCounter.text = "Laps:" + textPlayerCount + "/3";
             }
             
