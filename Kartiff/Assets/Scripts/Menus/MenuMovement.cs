@@ -6,6 +6,7 @@ public class MenuMovement : MonoBehaviour
 {
     public int cameraPosition;
     public List<Transform> cameraPositions;
+    public GameObject AI;
     
     // Start is called before the first frame update
     void Start()
@@ -28,7 +29,9 @@ public class MenuMovement : MonoBehaviour
             cameraPosition = 0;
         }
 
+
         transform.position = cameraPositions[cameraPosition].position;
         transform.rotation = cameraPositions[cameraPosition].rotation;
+
     }
 }
