@@ -41,7 +41,7 @@ public class PlaceSystem : MonoBehaviour
 
         placesTracker = new float[aiAmount + 1];
 
-        player = GameObject.Find("Player");
+        player = GameObject.Find("PlayerFixed (1)");
 
         placeCounter = GameObject.Find("PlaceCounter").GetComponent<TextMeshProUGUI>();
 
