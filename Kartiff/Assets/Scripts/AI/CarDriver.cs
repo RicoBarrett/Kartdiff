@@ -16,7 +16,7 @@ public class CarDriver : MonoBehaviour
 
     public void SetInputs(float forwardAmount, float turnAmount)
     {
-        speed = forwardAmount * 50f;
+        speed = forwardAmount * 60f;
         turnSpeed = turnAmount * 100f;
     }
 
