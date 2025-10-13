@@ -4,9 +4,9 @@ using UnityEngine;
 public class PWR_Train : MonoBehaviour
 {
     [Header("train settings")]
-    public float trainDuration = 4f;
-    public float speedMultiplier = 1.8f;
-    public Transform[] waypoints;
+    public float trainDuration = 5f;
+    public float speedMultiplier = 3f;
+    public Transform[] waypoint;
 
     [Header("references")]
     public GameObject trainModel;
@@ -81,9 +81,9 @@ public class PWR_Train : MonoBehaviour
 
         while (elapsed < trainDuration)
         {
-            if (waypoints != null && waypoints.Length > 0 && currentWaypointIndex < waypoints.Length)
+            if (waypoint != null && waypoint.Length > 0 && currentWaypointIndex < waypoint.Length)
             {
-                Vector3 target = waypoints[currentWaypointIndex].position;
+                Vector3 target = waypoint[currentWaypointIndex].position;
                 Vector3 direction = (target - playerRb.transform.position).normalized;
                 playerRb.MovePosition(playerRb.transform.position + direction * playerMovement.moveSpeed * Time.deltaTime);
 
