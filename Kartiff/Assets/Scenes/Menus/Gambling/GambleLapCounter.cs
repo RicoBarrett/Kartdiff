@@ -27,7 +27,7 @@ public class GambleLapCounter : MonoBehaviour
         {
             LapCounter++;
 
-            if (LapCounter == 1)
+            if (LapCounter == 3)
             {
                 Time.timeScale = 0;
 
