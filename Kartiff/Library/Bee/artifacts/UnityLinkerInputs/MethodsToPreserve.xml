@@ -1,0 +1,15 @@
+<linker>
+	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="Betting">
+			<method name="Black"/>
+			<method name="Blue"/>
+			<method name="Red"/>
+			<method name="SetBlackName"/>
+			<method name="SetBlueName"/>
+			<method name="SetRedName"/>
+			<method name="SetWhiteName"/>
+			<method name="StartGame"/>
+			<method name="White"/>
+		</type>
+	</assembly>
+</linker>

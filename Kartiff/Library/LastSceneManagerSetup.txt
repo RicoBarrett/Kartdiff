@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/AndyImplementing.unity
+- path: Assets/Scenes/Menus/Gambling/Gambling.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

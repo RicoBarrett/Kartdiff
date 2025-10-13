@@ -1267,7 +1267,7 @@
       "DisplayName": "Writing 70367205425993171.rsp",
       "ActionType": "WriteFile",
       "PayloadOffset": 51829,
-      "PayloadLength": 73916,
+      "PayloadLength": 74052,
       "PayloadDebugContentSnippet": "--allowed-assembly=\"C:/Program",
       "Inputs": [],
       "InputFlags": [],
@@ -1649,6 +1649,7 @@
         "C:/Program Files/Unity/Hub/Editor/2023.1.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/cscompmgd.dll",
         "C:/Program Files/Unity/Hub/Editor/2023.1.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/monodoc.dll",
         "C:/Program Files/Unity/Hub/Editor/2023.1.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/mscorlib.dll",
+        "C:/Users/Rico Barrett/Desktop/Year2/Kartdiff/Kartiff/Library/Bee/artifacts/UnityLinkerInputs/MethodsToPreserve.xml",
         "C:/Users/Rico Barrett/Desktop/Year2/Kartdiff/Kartiff/Library/Bee/artifacts/UnityLinkerInputs/TypesInScenes.xml",
         "C:/Users/Rico Barrett/Desktop/Year2/Kartdiff/Kartiff/Library/Bee/artifacts/UnityLinkerInputs/SerializedTypes.xml",
         "C:/Users/Rico Barrett/Desktop/Year2/Kartdiff/Kartiff/Temp/InputSystemLink.xml",
@@ -1935,6 +1936,7 @@
         "Library/Bee/artifacts/rsp/70367205425993171.rsp"
       ],
       "InputFlags": [
+        0,
         0,
         0,
         0,
@@ -4771,7 +4773,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info",
       "DisplayName": "Writing app.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 125834,
+      "PayloadOffset": 125970,
       "PayloadLength": 22,
       "PayloadDebugContentSnippet": "DefaultCompany\nKartiff",
       "Inputs": [],

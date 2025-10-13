@@ -9,6 +9,13 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Betting",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "",
             "nativeClass": "BuildSettings",
             "fullManagedTypeName": "",
@@ -35,8 +42,15 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "GambleLapCounter",
+            "moduleName": "",
+            "usedInScenes": []
         },
         {
             "managedAssemblyName": "",
@@ -44,7 +58,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -60,13 +74,13 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "Movements",
+            "fullManagedTypeName": "NameContainer",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -76,7 +90,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -92,7 +106,7 @@
             "fullManagedTypeName": "",
             "moduleName": "AI",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -128,6 +142,48 @@
             "nativeClass": "StreamingManager",
             "fullManagedTypeName": "",
             "moduleName": "Streaming",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TextMeshProUGUI",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TMP_FontAsset",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TMP_InputField",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TMP_Settings",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TMP_SpriteAsset",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TMP_StyleSheet",
+            "moduleName": "",
             "usedInScenes": []
         },
         {
@@ -171,7 +227,7 @@
             "fullManagedTypeName": "UnityEditor.MonoScript",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -222,7 +278,7 @@
             "fullManagedTypeName": "UnityEngine.AudioBehaviour",
             "moduleName": "Audio",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -231,7 +287,7 @@
             "fullManagedTypeName": "UnityEngine.AudioListener",
             "moduleName": "Audio",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -240,7 +296,7 @@
             "fullManagedTypeName": "UnityEngine.Behaviour",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -249,7 +305,7 @@
             "fullManagedTypeName": "UnityEngine.BoxCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -258,7 +314,7 @@
             "fullManagedTypeName": "UnityEngine.Camera",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -267,7 +323,7 @@
             "fullManagedTypeName": "UnityEngine.Canvas",
             "moduleName": "UI",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -276,7 +332,7 @@
             "fullManagedTypeName": "UnityEngine.CanvasRenderer",
             "moduleName": "UI",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -285,7 +341,7 @@
             "fullManagedTypeName": "UnityEngine.CapsuleCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -294,7 +350,7 @@
             "fullManagedTypeName": "UnityEngine.Collider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -303,7 +359,7 @@
             "fullManagedTypeName": "UnityEngine.Component",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -312,8 +368,22 @@
             "fullManagedTypeName": "UnityEngine.Cubemap",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.EventSystems.EventSystem",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.EventSystems.StandaloneInputModule",
+            "moduleName": "",
+            "usedInScenes": []
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
@@ -321,7 +391,7 @@
             "fullManagedTypeName": "UnityEngine.Font",
             "moduleName": "TextRendering",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -330,7 +400,7 @@
             "fullManagedTypeName": "UnityEngine.GameObject",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -350,20 +420,6 @@
         {
             "managedAssemblyName": "Unity.InputSystem.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "UnityEngine.InputSystem.PlayerInput",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "Unity.InputSystem.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "UnityEngine.InputSystem.PlayerInputManager",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "Unity.InputSystem.dll",
-            "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.InputSystem.RemoteInputPlayerConnection",
             "moduleName": "",
             "usedInScenes": []
@@ -374,7 +430,7 @@
             "fullManagedTypeName": "UnityEngine.Light",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -383,7 +439,7 @@
             "fullManagedTypeName": "UnityEngine.LightmapSettings",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -392,7 +448,7 @@
             "fullManagedTypeName": "UnityEngine.Material",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -401,7 +457,7 @@
             "fullManagedTypeName": "UnityEngine.Mesh",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -410,7 +466,7 @@
             "fullManagedTypeName": "UnityEngine.MeshCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -419,7 +475,7 @@
             "fullManagedTypeName": "UnityEngine.MeshFilter",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -428,7 +484,7 @@
             "fullManagedTypeName": "UnityEngine.MeshRenderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -437,7 +493,7 @@
             "fullManagedTypeName": "UnityEngine.MonoBehaviour",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -446,7 +502,7 @@
             "fullManagedTypeName": "UnityEngine.Object",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -462,7 +518,7 @@
             "fullManagedTypeName": "UnityEngine.RectTransform",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -471,7 +527,7 @@
             "fullManagedTypeName": "UnityEngine.Renderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -487,7 +543,7 @@
             "fullManagedTypeName": "UnityEngine.RenderSettings",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -496,7 +552,7 @@
             "fullManagedTypeName": "UnityEngine.Rigidbody",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -505,7 +561,7 @@
             "fullManagedTypeName": "UnityEngine.Shader",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -514,7 +570,7 @@
             "fullManagedTypeName": "UnityEngine.SphereCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -522,7 +578,9 @@
             "nativeClass": "Sprite",
             "fullManagedTypeName": "UnityEngine.Sprite",
             "moduleName": "Core",
-            "usedInScenes": []
+            "usedInScenes": [
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
+            ]
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
@@ -530,7 +588,7 @@
             "fullManagedTypeName": "UnityEngine.TextAsset",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -539,7 +597,7 @@
             "fullManagedTypeName": "UnityEngine.Texture",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -548,7 +606,7 @@
             "fullManagedTypeName": "UnityEngine.Texture2D",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
         },
         {
@@ -557,8 +615,15 @@
             "fullManagedTypeName": "UnityEngine.Transform",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
+                "Assets/Scenes/Menus/Gambling/Gambling.unity"
             ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.Button",
+            "moduleName": "",
+            "usedInScenes": []
         },
         {
             "managedAssemblyName": "UnityEngine.UI.dll",
@@ -577,30 +642,35 @@
         {
             "managedAssemblyName": "UnityEngine.UI.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.Image",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.LayoutElement",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.UI.RawImage",
             "moduleName": "",
             "usedInScenes": []
         },
         {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "WheelCollider",
-            "fullManagedTypeName": "UnityEngine.WheelCollider",
-            "moduleName": "Vehicles",
-            "usedInScenes": [
-                "Assets/Scenes/GameplayScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "Assembly-CSharp.dll",
+            "managedAssemblyName": "UnityEngine.UI.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "WaypointContainer",
+            "fullManagedTypeName": "UnityEngine.UI.RectMask2D",
             "moduleName": "",
             "usedInScenes": []
         },
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "WheelMovement",
+            "fullManagedTypeName": "WaypointContainer",
             "moduleName": "",
             "usedInScenes": []
         }

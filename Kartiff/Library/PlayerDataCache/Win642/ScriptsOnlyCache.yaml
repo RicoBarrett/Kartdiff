@@ -2,18 +2,17 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - AIDriver
+    - Betting
     - CarDriver
-    - Movements
+    - GambleLapCounter
+    - NameContainer
     - ReviveTracker
     - TrackCollider
     - TrackParent
     - WaypointContainer
-    - WheelMovement
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputSettings
     - UnityEngine.InputSystem.InputSystemObject
-    - UnityEngine.InputSystem.PlayerInput
-    - UnityEngine.InputSystem.PlayerInputManager
     - UnityEngine.InputSystem.RemoteInputPlayerConnection
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -23,6 +22,13 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_InputField
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -37,20 +43,18 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.RawImage
+    - UnityEngine.UI.RectMask2D
   serializedClasses:
     Unity.InputSystem:
-    - UnityEngine.InputSystem.InputAction
-    - UnityEngine.InputSystem.InputActionProperty
-    - UnityEngine.InputSystem.InputBinding
     - UnityEngine.InputSystem.InputSettings/iOSSettings
-    - UnityEngine.InputSystem.PlayerInput/ControlsChangedEvent
-    - UnityEngine.InputSystem.PlayerInput/DeviceLostEvent
-    - UnityEngine.InputSystem.PlayerInput/DeviceRegainedEvent
-    - UnityEngine.InputSystem.PlayerInputManager/PlayerJoinedEvent
-    - UnityEngine.InputSystem.PlayerInputManager/PlayerLeftEvent
     - UnityEngine.InputSystem.iOS.PrivacyDataUsage
     Unity.TextMeshPro:
     - TMPro.FaceInfo_Legacy
@@ -62,22 +66,62 @@ ScriptsOnlyBuild:
     - TMPro.TMP_GlyphAdjustmentRecord
     - TMPro.TMP_GlyphPairAdjustmentRecord
     - TMPro.TMP_GlyphValueRecord
+    - TMPro.TMP_InputField/OnChangeEvent
+    - TMPro.TMP_InputField/SelectionEvent
+    - TMPro.TMP_InputField/SubmitEvent
+    - TMPro.TMP_InputField/TextSelectionEvent
+    - TMPro.TMP_InputField/TouchScreenKeyboardEvent
     - TMPro.TMP_Sprite
     - TMPro.TMP_SpriteCharacter
     - TMPro.TMP_SpriteGlyph
     - TMPro.TMP_Style
+    - TMPro.VertexGradient
     UnityEngine.CoreModule:
+    - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
+    - UnityEngine.Events.PersistentListenerMode
     UnityEngine.TextCoreFontEngineModule:
     - UnityEngine.TextCore.FaceInfo
     - UnityEngine.TextCore.Glyph
     - UnityEngine.TextCore.GlyphMetrics
     - UnityEngine.TextCore.GlyphRect
     UnityEngine.UI:
+    - UnityEngine.UI.AnimationTriggers
+    - UnityEngine.UI.Button/ButtonClickedEvent
+    - UnityEngine.UI.ColorBlock
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
-  methodsToPreserve: []
+    - UnityEngine.UI.Navigation
+    - UnityEngine.UI.SpriteState
+  methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: Betting
+    methodName: Red
+  - assembly: Assembly-CSharp
+    fullTypeName: Betting
+    methodName: Blue
+  - assembly: Assembly-CSharp
+    fullTypeName: Betting
+    methodName: SetRedName
+  - assembly: Assembly-CSharp
+    fullTypeName: Betting
+    methodName: SetBlackName
+  - assembly: Assembly-CSharp
+    fullTypeName: Betting
+    methodName: White
+  - assembly: Assembly-CSharp
+    fullTypeName: Betting
+    methodName: StartGame
+  - assembly: Assembly-CSharp
+    fullTypeName: Betting
+    methodName: SetBlueName
+  - assembly: Assembly-CSharp
+    fullTypeName: Betting
+    methodName: Black
+  - assembly: Assembly-CSharp
+    fullTypeName: Betting
+    methodName: SetWhiteName
   sceneClasses:
-    Assets/Scenes/GameplayScene.unity:
+    Assets/Scenes/Menus/Gambling/Gambling.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -113,29 +157,37 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 17154}
+    - Class: 114
       Script: {instanceID: 17156}
     - Class: 114
-      Script: {instanceID: 17206}
+      Script: {instanceID: 17158}
+    - Class: 114
+      Script: {instanceID: 17340}
     - Class: 114
       Script: {instanceID: 17878}
     - Class: 114
       Script: {instanceID: 18032}
     - Class: 114
-      Script: {instanceID: 18036}
-    - Class: 114
-      Script: {instanceID: 18526}
+      Script: {instanceID: 18384}
     - Class: 114
       Script: {instanceID: 18618}
     - Class: 114
       Script: {instanceID: 19992}
     - Class: 114
+      Script: {instanceID: 20102}
+    - Class: 114
       Script: {instanceID: 20118}
     - Class: 114
       Script: {instanceID: 20408}
     - Class: 114
+      Script: {instanceID: 21026}
+    - Class: 114
       Script: {instanceID: 21246}
     - Class: 114
       Script: {instanceID: 21946}
+    - Class: 114
+      Script: {instanceID: 22078}
     - Class: 114
       Script: {instanceID: 22086}
     - Class: 114
@@ -143,11 +195,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 22424}
     - Class: 114
+      Script: {instanceID: 22466}
+    - Class: 114
       Script: {instanceID: 22760}
     - Class: 114
       Script: {instanceID: 23566}
     - Class: 114
-      Script: {instanceID: 24492}
+      Script: {instanceID: 62366}
+    - Class: 114
+      Script: {instanceID: 98262}
+    - Class: 114
+      Script: {instanceID: 140020}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -156,11 +214,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
-    - Class: 146
-      Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -1395,7 +1453,7 @@ ScriptsOnlyBuild:
     className: DropdownSample
   - hash:
       serializedVersion: 2
-      Hash: b66ca66f416b74d7f7235f3d7abfaca3
+      Hash: 73c9a395955b18052b216d3e04cbce1c
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: colllisionScript
@@ -1501,7 +1559,25 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: f26b47705410f2dd9df02b229a0e9322
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Betting
+  - hash:
+      serializedVersion: 2
+      Hash: 0092c03f37074bbf2a3e4a4130c9e7b6
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GambleLapCounter
+  - hash:
+      serializedVersion: 2
+      Hash: 83b3b4e2f8f6bc119c070a6a03c9d78d
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: NameContainer
   platform: 19
   scenePathNames:
-  - Assets/Scenes/GameplayScene.unity
-  playerPath: G:/st20300362/NewBUild/Kartiff.exe
+  - Assets/Scenes/Menus/Gambling/Gambling.unity
+  playerPath: C:/Users/Rico Barrett/Desktop/Year2/Kartiff Build/Kartiff.exe
