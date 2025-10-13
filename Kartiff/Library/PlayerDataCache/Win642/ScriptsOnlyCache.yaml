@@ -4,9 +4,6 @@ ScriptsOnlyBuild:
     - AIDriver
     - CarDriver
     - MenuMovement
-    - ReviveTracker
-    - TrackCollider
-    - TrackParent
     - WaypointContainer
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputSettings
@@ -29,8 +26,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -44,7 +43,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
-    - UnityEngine.UI.RawImage
   serializedClasses:
     Unity.InputSystem:
     - UnityEngine.InputSystem.InputSettings/iOSSettings
@@ -116,45 +114,37 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 17154}
+      Script: {instanceID: 17198}
     - Class: 114
-      Script: {instanceID: 17200}
+      Script: {instanceID: 17868}
     - Class: 114
-      Script: {instanceID: 17870}
+      Script: {instanceID: 18364}
     - Class: 114
-      Script: {instanceID: 18018}
+      Script: {instanceID: 18596}
     - Class: 114
-      Script: {instanceID: 18366}
+      Script: {instanceID: 18928}
     - Class: 114
-      Script: {instanceID: 18598}
+      Script: {instanceID: 19958}
     - Class: 114
-      Script: {instanceID: 18930}
+      Script: {instanceID: 20084}
     - Class: 114
-      Script: {instanceID: 19960}
+      Script: {instanceID: 20372}
     - Class: 114
-      Script: {instanceID: 20086}
+      Script: {instanceID: 21196}
     - Class: 114
-      Script: {instanceID: 20374}
+      Script: {instanceID: 21838}
     - Class: 114
-      Script: {instanceID: 21198}
+      Script: {instanceID: 22022}
     - Class: 114
-      Script: {instanceID: 22020}
+      Script: {instanceID: 22030}
     - Class: 114
-      Script: {instanceID: 22028}
+      Script: {instanceID: 22270}
     - Class: 114
-      Script: {instanceID: 22268}
+      Script: {instanceID: 22402}
     - Class: 114
-      Script: {instanceID: 22360}
+      Script: {instanceID: 22694}
     - Class: 114
-      Script: {instanceID: 22400}
-    - Class: 114
-      Script: {instanceID: 23328}
-    - Class: 114
-      Script: {instanceID: 24668}
-    - Class: 114
-      Script: {instanceID: 24700}
-    - Class: 114
-      Script: {instanceID: 24752}
+      Script: {instanceID: 23332}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -180,12 +170,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: ContentSizeFitter
-  - hash:
-      serializedVersion: 2
-      Hash: 6a356b04c25c0bb008c1b24bf8b0f996
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: CanvasScaler
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -998,10 +982,22 @@ ScriptsOnlyBuild:
     className: Benchmark02
   - hash:
       serializedVersion: 2
+      Hash: 6a356b04c25c0bb008c1b24bf8b0f996
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: CanvasScaler
+  - hash:
+      serializedVersion: 2
       Hash: 925a889a282ea89c4d9bd41afd22e4c2
     assemblyName: Assembly-CSharp
     namespaceName: TMPro.Examples
     className: TextMeshSpawner
+  - hash:
+      serializedVersion: 2
+      Hash: 047c67786cb70636adae614c59e1c0ac
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ReviveTracker
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1104,6 +1100,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CarDriver
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1250,7 +1252,7 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
-      Hash: d912ca050936a92cc38464813c604df1
+      Hash: 2844e79fb43fe6efda38e9e7ba0bee44
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: MenuMovement
@@ -1272,6 +1274,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: AIMoveTest
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: TrackCollider
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1428,85 +1436,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 7bd282d7817462fcd7b40b38a58e40e9
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PlayerMovement
-  - hash:
-      serializedVersion: 2
-      Hash: 2d591e2ba941188f069bedf813115c28
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ReviveTracker
-  - hash:
-      serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: GameController
-  - hash:
-      serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: CarDriver
-  - hash:
-      serializedVersion: 2
-      Hash: afb9a16b8f6ce2ff12433c6665c445e1
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: checkScripts
-  - hash:
-      serializedVersion: 2
-      Hash: d624964061465e64fc7faeae579d075f
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PlaceSystem
-  - hash:
-      serializedVersion: 2
-      Hash: 35ce0fa9a4680f38b84b53ffa5421403
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: TestManager
-  - hash:
-      serializedVersion: 2
-      Hash: 047c67786cb70636adae614c59e1c0ac
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: TrackCollider
-  - hash:
-      serializedVersion: 2
-      Hash: 499599e21c162b8c67281ff7ab75f7e7
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: CharacterSelectorUI
-  - hash:
-      serializedVersion: 2
-      Hash: ee58481573f7b02655d00e06690dc51e
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PanelCloser
-  - hash:
-      serializedVersion: 2
-      Hash: b66ca66f416b74d7f7235f3d7abfaca3
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: colllisionScript
-  - hash:
-      serializedVersion: 2
-      Hash: ee58481573f7b02655d00e06690dc51e
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PanelScript
-  - hash:
-      serializedVersion: 2
-      Hash: 548f5d302ee97742dcd947c1b39f5858
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: postCheckScripts
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menus/MainMenu.unity
-  playerPath: G:/st20300362/NewBUild/Kartiff.exe
+  playerPath: C:/Users/Rico Barrett/Desktop/Year2/Kartiff Build/Kartiff.exe
