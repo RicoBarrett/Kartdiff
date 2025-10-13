@@ -5,10 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - CollisionBox
-  - AI
   - PlayerPos
-  - AIPosFront
-  - AIPosBack
+  - Waypoints LapSystem
+  - AI LapSystem
+  - Player LapSystem
   layers:
   - Default
   - TransparentFX

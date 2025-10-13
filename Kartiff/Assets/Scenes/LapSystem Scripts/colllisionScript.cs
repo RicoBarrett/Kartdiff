@@ -42,7 +42,7 @@ public class colllisionScript : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player LapSystem")
         {
             playerLapCount++;
 
@@ -58,10 +58,6 @@ public class colllisionScript : MonoBehaviour
                 lapCounter.text = "Laps:" + textPlayerCount + "/3";
             }
             
-        }
-        if (other.gameObject.tag == "AI")
-        {
-            AILapCount++;
         }
     }
 }

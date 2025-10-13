@@ -30,7 +30,7 @@ public class postCheckScripts : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player" || other.gameObject.tag == "AI")
+        if (other.gameObject.tag == "Player LapSystem" || other.gameObject.tag == "AI LapSystem")
         {
             collisionBox.enabled = false;
         }
