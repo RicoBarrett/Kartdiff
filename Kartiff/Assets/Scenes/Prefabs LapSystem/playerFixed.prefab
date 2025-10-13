@@ -709,6 +709,15 @@ MonoBehaviour:
   acceleration: 500
   breakingForce: 300
   maxTurnAngle: 15
+  playerControls:
+    m_Name: Player Controls
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 3cbe4b6b-bbeb-4a7b-8a6c-e81c8b231028
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
 --- !u!54 &2416150340186393692
 Rigidbody:
   m_ObjectHideFlags: 0
