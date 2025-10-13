@@ -2,23 +2,19 @@
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="AIDriver" preserve="nothing"/>
 		<type fullname="CarDriver" preserve="nothing"/>
-		<type fullname="MenuMovement" preserve="nothing"/>
+		<type fullname="Movements" preserve="nothing"/>
 		<type fullname="ReviveTracker" preserve="nothing"/>
 		<type fullname="TrackCollider" preserve="nothing"/>
 		<type fullname="TrackParent" preserve="nothing"/>
 		<type fullname="WaypointContainer" preserve="nothing"/>
+		<type fullname="WheelMovement" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.InputSystem">
 		<type fullname="UnityEngine.InputSystem.InputSettings" preserve="nothing"/>
 		<type fullname="UnityEngine.InputSystem.InputSystemObject" preserve="nothing"/>
+		<type fullname="UnityEngine.InputSystem.PlayerInput" preserve="nothing"/>
+		<type fullname="UnityEngine.InputSystem.PlayerInputManager" preserve="nothing"/>
 		<type fullname="UnityEngine.InputSystem.RemoteInputPlayerConnection" preserve="nothing"/>
-	</assembly>
-	<assembly fullname="Unity.TextMeshPro">
-		<type fullname="TMPro.TextMeshProUGUI" preserve="nothing"/>
-		<type fullname="TMPro.TMP_FontAsset" preserve="nothing"/>
-		<type fullname="TMPro.TMP_Settings" preserve="nothing"/>
-		<type fullname="TMPro.TMP_SpriteAsset" preserve="nothing"/>
-		<type fullname="TMPro.TMP_StyleSheet" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="UnityEngine">
 		<type fullname="UnityEditor.AudioManager" preserve="nothing"/>
@@ -38,6 +34,7 @@
 		<type fullname="UnityEngine.Camera" preserve="nothing"/>
 		<type fullname="UnityEngine.Canvas" preserve="nothing"/>
 		<type fullname="UnityEngine.CanvasRenderer" preserve="nothing"/>
+		<type fullname="UnityEngine.CapsuleCollider" preserve="nothing"/>
 		<type fullname="UnityEngine.Collider" preserve="nothing"/>
 		<type fullname="UnityEngine.Component" preserve="nothing"/>
 		<type fullname="UnityEngine.Cubemap" preserve="nothing"/>
@@ -65,14 +62,11 @@
 		<type fullname="UnityEngine.Texture" preserve="nothing"/>
 		<type fullname="UnityEngine.Texture2D" preserve="nothing"/>
 		<type fullname="UnityEngine.Transform" preserve="nothing"/>
+		<type fullname="UnityEngine.WheelCollider" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="UnityEngine.UI">
-		<type fullname="UnityEngine.EventSystems.EventSystem" preserve="nothing"/>
-		<type fullname="UnityEngine.EventSystems.StandaloneInputModule" preserve="nothing"/>
-		<type fullname="UnityEngine.UI.Button" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.CanvasScaler" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.GraphicRaycaster" preserve="nothing"/>
-		<type fullname="UnityEngine.UI.Image" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.RawImage" preserve="nothing"/>
 	</assembly>
 </linker>
