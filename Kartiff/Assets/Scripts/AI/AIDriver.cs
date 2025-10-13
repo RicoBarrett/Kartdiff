@@ -11,7 +11,7 @@ public class AIDriver : MonoBehaviour
     public List<Transform> waypoints;
     public Transform waypoint;
     public int currentWaypoint;
-    public float waypointRange;
+    public float waypointRange = 280f;
 
     private CarDriver carDriver;
     private Vector3 targetPosition;
@@ -30,7 +30,7 @@ public class AIDriver : MonoBehaviour
         waypoints = waypointContainer.waypoints;
         currentWaypoint = 0;
 
-        waypoint = waypoints[currentWaypoint].GetChild(Random.Range(0, 4));
+        waypoint = waypoints[currentWaypoint].GetChild(Random.Range(0, 6));
     }
 
     void Update()
@@ -38,12 +38,12 @@ public class AIDriver : MonoBehaviour
         if (Vector3.Distance(waypoints[currentWaypoint].position, transform.position) < waypointRange)
         {
             currentWaypoint++;
-            waypoint = waypoints[currentWaypoint].GetChild(Random.Range(0, 4));
+            waypoint = waypoints[currentWaypoint].GetChild(Random.Range(0, 6));
 
             if (currentWaypoint == (waypoints.Count-1))
             {
                 currentWaypoint = 0;
-                waypoint = waypoints[currentWaypoint].GetChild(Random.Range(0, 4));
+                waypoint = waypoints[currentWaypoint].GetChild(Random.Range(0, 6));
             }
         }
 
@@ -75,13 +75,5 @@ public class AIDriver : MonoBehaviour
 
         // Pass the inputs to the car driver
         carDriver.SetInputs(forwardAmount, turnAmount);
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            direction = Vector3.Reflect(rb.velocity, collision.contacts[0].normal);
-        }
     }
 }
