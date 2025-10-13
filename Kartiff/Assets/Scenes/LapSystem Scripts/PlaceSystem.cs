@@ -56,47 +56,16 @@ public class PlaceSystem : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-
-
-
         playerDistance = Vector3.Distance(player.transform.position, Waypoint[WaypointCount].transform.position);
-        placesTracker[aiAmount] = playerDistance;
+        placesTracker[aiAmount] = playerDistance;   
 
-        if (playerDistance < 3)
+        while (AICount < aiCount.Length)
         {
-            if (Waypoint[WaypointCount] == Waypoint[waypointAmount - 1])
-            {
-                WaypointCount = 0;
-            }
+            aiDistance[AICount] = Vector3.Distance(aiCount[AICount].transform.position, Waypoint[WaypointCount].transform.position);
+            placesTracker[AICount] = Vector3.Distance(aiCount[AICount].transform.position, Waypoint[WaypointCount].transform.position);
 
-            else
-            {
-                WaypointCount++;
-            }
+            AICount++;
         }
-        
-
-            while (AICount < aiCount.Length)
-            {
-                aiDistance[AICount] = Vector3.Distance(aiCount[AICount].transform.position, Waypoint[WaypointCount].transform.position);
-                placesTracker[AICount] = Vector3.Distance(aiCount[AICount].transform.position, Waypoint[WaypointCount].transform.position);
-
-                if (aiDistance[AICount] < 3)
-                {
-                    if (Waypoint[WaypointCount] == Waypoint[waypointAmount - 1])
-                    {
-                    WaypointCount = 0;
-                    }
-
-                    else
-                    {
-                    WaypointCount++;
-                    }
-                }
-
-                AICount++;
-            }
-
 
         Array.Sort(placesTracker);
 
