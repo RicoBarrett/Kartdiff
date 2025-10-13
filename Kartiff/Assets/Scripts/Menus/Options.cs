@@ -1,0 +1,34 @@
+namespace rico
+{
+    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
+
+    public class Options : MonoBehaviour
+    {
+        public Animator menuAnimator;
+
+
+        // Start is called before the first frame update
+        void Start()
+        {
+
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
+
+        public void ActivateControls()
+        {
+            menuAnimator.SetTrigger("ActivateControls");
+        }
+
+        public void DeactivateControls()
+        {
+            menuAnimator.SetTrigger("ActivateControls");
+        }
+    }
+}

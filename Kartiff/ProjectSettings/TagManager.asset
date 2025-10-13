@@ -4,9 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Dummy
-  - Powerup
-  - waypoint
+  - CollisionBox
+  - PlayerPos
+  - Waypoints LapSystem
+  - AI LapSystem
+  - Player LapSystem
   layers:
   - Default
   - TransparentFX
