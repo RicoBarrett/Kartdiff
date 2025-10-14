@@ -15,16 +15,10 @@ public class AIDriver : MonoBehaviour
 
     private CarDriver carDriver;
     private Vector3 targetPosition;
-    private Rigidbody rb;
-    private Vector3 direction;
     
 
     void Start()
     {
-
-
-        rb = GetComponent<Rigidbody>();
-
         carDriver = GetComponent<CarDriver>();
 
         waypoints = waypointContainer.waypoints;

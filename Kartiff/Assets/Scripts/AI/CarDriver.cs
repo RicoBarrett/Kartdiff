@@ -5,6 +5,7 @@ using UnityEngine;
 public class CarDriver : MonoBehaviour
 {
     private float speed = 0f;
+    public float speedModifier = 60f;
     private float turnSpeed = 0f;
 
     private Rigidbody rb;
@@ -16,7 +17,7 @@ public class CarDriver : MonoBehaviour
 
     public void SetInputs(float forwardAmount, float turnAmount)
     {
-        speed = forwardAmount * 60f;
+        speed = forwardAmount * speedModifier;
         turnSpeed = turnAmount * 100f;
     }
 

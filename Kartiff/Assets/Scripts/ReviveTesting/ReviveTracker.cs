@@ -28,7 +28,7 @@ public class ReviveTracker : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.transform.position = new Vector3(transform.position.x, (sideColliders.transform.position.y + 10), trackParent.playerPosition.z);
+            other.gameObject.transform.position = new Vector3(trackParent.playerPosition.x, (trackParent.playerPosition.y + 20), trackParent.playerPosition.z);
             other.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
 
             if (other.gameObject.name == "AI")

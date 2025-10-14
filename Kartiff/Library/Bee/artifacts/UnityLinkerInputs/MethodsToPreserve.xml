@@ -1,6 +1,7 @@
 <linker>
 	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
 		<type fullname="Betting">
+			<method name="Back"/>
 			<method name="Black"/>
 			<method name="Blue"/>
 			<method name="Red"/>
@@ -10,6 +11,16 @@
 			<method name="SetWhiteName"/>
 			<method name="StartGame"/>
 			<method name="White"/>
+		</type>
+		<type fullname="MenuPotions">
+			<method name="AIMode"/>
+			<method name="Options"/>
+			<method name="Play"/>
+			<method name="Quit"/>
+		</type>
+		<type fullname="rico.Options">
+			<method name="ActivateControls"/>
+			<method name="DeactivateControls"/>
 		</type>
 	</assembly>
 </linker>

@@ -5,11 +5,15 @@ ScriptsOnlyBuild:
     - Betting
     - CarDriver
     - GambleLapCounter
+    - MenuMovement
+    - MenuPotions
     - NameContainer
     - ReviveTracker
     - TrackCollider
     - TrackParent
     - WaypointContainer
+    - WheelMovement
+    - rico.Options
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputSettings
     - UnityEngine.InputSystem.InputSystemObject
@@ -54,6 +58,8 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.RectMask2D
   serializedClasses:
     Unity.InputSystem:
+    - UnityEngine.InputSystem.InputAction
+    - UnityEngine.InputSystem.InputBinding
     - UnityEngine.InputSystem.InputSettings/iOSSettings
     - UnityEngine.InputSystem.iOS.PrivacyDataUsage
     Unity.TextMeshPro:
@@ -94,6 +100,21 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: Assembly-CSharp
+    fullTypeName: MenuPotions
+    methodName: Play
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuPotions
+    methodName: Options
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuPotions
+    methodName: AIMode
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuPotions
+    methodName: Quit
+  - assembly: Assembly-CSharp
+    fullTypeName: Betting
+    methodName: Back
+  - assembly: Assembly-CSharp
     fullTypeName: Betting
     methodName: Red
   - assembly: Assembly-CSharp
@@ -120,8 +141,180 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: Betting
     methodName: SetWhiteName
+  - assembly: Assembly-CSharp
+    fullTypeName: rico.Options
+    methodName: ActivateControls
+  - assembly: Assembly-CSharp
+    fullTypeName: rico.Options
+    methodName: DeactivateControls
   sceneClasses:
+    Assets/Scenes/GameplayScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 17156}
+    - Class: 114
+      Script: {instanceID: 18034}
+    - Class: 114
+      Script: {instanceID: 18038}
+    - Class: 114
+      Script: {instanceID: 18620}
+    - Class: 114
+      Script: {instanceID: 21952}
+    - Class: 114
+      Script: {instanceID: 22092}
+    - Class: 114
+      Script: {instanceID: 22338}
+    - Class: 114
+      Script: {instanceID: 22430}
+    - Class: 114
+      Script: {instanceID: 22768}
+    - Class: 114
+      Script: {instanceID: 23574}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 146
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/Menus/Gambling/Gambling.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 17154}
+    - Class: 114
+      Script: {instanceID: 17156}
+    - Class: 114
+      Script: {instanceID: 17158}
+    - Class: 114
+      Script: {instanceID: 17340}
+    - Class: 114
+      Script: {instanceID: 17774}
+    - Class: 114
+      Script: {instanceID: 18034}
+    - Class: 114
+      Script: {instanceID: 18386}
+    - Class: 114
+      Script: {instanceID: 18620}
+    - Class: 114
+      Script: {instanceID: 18656}
+    - Class: 114
+      Script: {instanceID: 20108}
+    - Class: 114
+      Script: {instanceID: 21032}
+    - Class: 114
+      Script: {instanceID: 21252}
+    - Class: 114
+      Script: {instanceID: 21952}
+    - Class: 114
+      Script: {instanceID: 22084}
+    - Class: 114
+      Script: {instanceID: 22092}
+    - Class: 114
+      Script: {instanceID: 22338}
+    - Class: 114
+      Script: {instanceID: 22430}
+    - Class: 114
+      Script: {instanceID: 22472}
+    - Class: 114
+      Script: {instanceID: 22630}
+    - Class: 114
+      Script: {instanceID: 22768}
+    - Class: 114
+      Script: {instanceID: 23574}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Menus/MainMenu.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -163,49 +356,41 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 17158}
     - Class: 114
-      Script: {instanceID: 17340}
+      Script: {instanceID: 17880}
     - Class: 114
-      Script: {instanceID: 17878}
+      Script: {instanceID: 18034}
     - Class: 114
-      Script: {instanceID: 18032}
+      Script: {instanceID: 18386}
     - Class: 114
-      Script: {instanceID: 18384}
+      Script: {instanceID: 18620}
     - Class: 114
-      Script: {instanceID: 18618}
+      Script: {instanceID: 19996}
     - Class: 114
-      Script: {instanceID: 19992}
+      Script: {instanceID: 20044}
     - Class: 114
-      Script: {instanceID: 20102}
+      Script: {instanceID: 20124}
     - Class: 114
-      Script: {instanceID: 20118}
+      Script: {instanceID: 20414}
     - Class: 114
-      Script: {instanceID: 20408}
+      Script: {instanceID: 21252}
     - Class: 114
-      Script: {instanceID: 21026}
+      Script: {instanceID: 21952}
     - Class: 114
-      Script: {instanceID: 21246}
+      Script: {instanceID: 22084}
     - Class: 114
-      Script: {instanceID: 21946}
+      Script: {instanceID: 22092}
     - Class: 114
-      Script: {instanceID: 22078}
+      Script: {instanceID: 22338}
     - Class: 114
-      Script: {instanceID: 22086}
+      Script: {instanceID: 22430}
     - Class: 114
-      Script: {instanceID: 22332}
+      Script: {instanceID: 22472}
     - Class: 114
-      Script: {instanceID: 22424}
+      Script: {instanceID: 22768}
     - Class: 114
-      Script: {instanceID: 22466}
+      Script: {instanceID: 23410}
     - Class: 114
-      Script: {instanceID: 22760}
-    - Class: 114
-      Script: {instanceID: 23566}
-    - Class: 114
-      Script: {instanceID: 62366}
-    - Class: 114
-      Script: {instanceID: 98262}
-    - Class: 114
-      Script: {instanceID: 140020}
+      Script: {instanceID: 23574}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -213,6 +398,75 @@ ScriptsOnlyBuild:
     - Class: 135
       Script: {instanceID: 0}
     - Class: 136
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Menus/OptionsMenu.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 17154}
+    - Class: 114
+      Script: {instanceID: 17156}
+    - Class: 114
+      Script: {instanceID: 17158}
+    - Class: 114
+      Script: {instanceID: 18386}
+    - Class: 114
+      Script: {instanceID: 18620}
+    - Class: 114
+      Script: {instanceID: 19952}
+    - Class: 114
+      Script: {instanceID: 21252}
+    - Class: 114
+      Script: {instanceID: 22084}
+    - Class: 114
+      Script: {instanceID: 22472}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -341,6 +595,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerMovementBarebones
+  - hash:
+      serializedVersion: 2
+      Hash: 0092c03f37074bbf2a3e4a4130c9e7b6
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GambleLapCounter
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -479,6 +739,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 83b3b4e2f8f6bc119c070a6a03c9d78d
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: NameContainer
   - hash:
       serializedVersion: 2
       Hash: 34fa63a30926bcf55d7323dae76be890
@@ -755,6 +1021,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: SignalReceiver
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MenuPotions
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1189,6 +1461,12 @@ ScriptsOnlyBuild:
     className: PlayerInputEditor
   - hash:
       serializedVersion: 2
+      Hash: f26b47705410f2dd9df02b229a0e9322
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Betting
+  - hash:
+      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.InputSystem
     namespaceName: UnityEngine.InputSystem.UI.Editor
@@ -1201,7 +1479,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
+      Hash: 5c94a41adb78631bf87e0d405163e508
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: CarDriver
@@ -1561,23 +1839,26 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: f26b47705410f2dd9df02b229a0e9322
+      Hash: 389bf4bd61bbd717a31474ae80eb222c
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: Betting
+    className: Placement
   - hash:
       serializedVersion: 2
-      Hash: 0092c03f37074bbf2a3e4a4130c9e7b6
+      Hash: f9a3ac5b20fa84f93dc2167f4e008f27
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: GambleLapCounter
+    className: AIPlacement
   - hash:
       serializedVersion: 2
-      Hash: 83b3b4e2f8f6bc119c070a6a03c9d78d
+      Hash: 01c5e829e4468c003822685c199fe36f
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: NameContainer
+    className: PlacementContainer
   platform: 19
   scenePathNames:
+  - Assets/Scenes/Menus/MainMenu.unity
+  - Assets/Scenes/GameplayScene.unity
   - Assets/Scenes/Menus/Gambling/Gambling.unity
+  - Assets/Scenes/Menus/OptionsMenu.unity
   playerPath: C:/Users/Rico Barrett/Desktop/Year2/Kartiff Build/Kartiff.exe

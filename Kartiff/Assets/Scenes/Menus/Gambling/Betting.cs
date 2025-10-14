@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Betting : MonoBehaviour
 {
@@ -97,5 +98,10 @@ public class Betting : MonoBehaviour
     {
         BlueNameString = BlueName.text;
         BlueAI.GetComponent<NameContainer>().carName = BlueNameString;
+    }
+
+    public void Back()
+    {
+        SceneManager.LoadScene(0);
     }
 }

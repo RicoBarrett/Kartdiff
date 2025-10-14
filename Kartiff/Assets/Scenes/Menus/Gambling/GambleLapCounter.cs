@@ -31,7 +31,14 @@ public class GambleLapCounter : MonoBehaviour
             {
                 Time.timeScale = 0;
 
-                Winner.text = GetComponent<NameContainer>().carName;
+                if (GetComponent<NameContainer>().carName != "")
+                {
+                    Winner.text = GetComponent<NameContainer>().carName;
+                }
+                else
+                {
+                    Winner.text = "Winner";
+                }
             }
         }
     }
